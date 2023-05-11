@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es">
+     <head>
+         <title>Title</title>
+         <meta charset="utf-8"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- <link rel="stylesheet"> -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+         <script src="./js/cart.js"></script>
+        
+         <link rel="stylesheet" href="./css/carrito.css">
+        </head>
+         
+       <!-- barra de navegacion-->
+         
+         <body>
+         <header class="p-3 text-bg-secondary">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                  <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="./Index.html" class="nav-link px-2 text-white">Inicio</a></li>
+                  <li><a href="./Contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+                </ul>
+        
+                <div class="two columns u-pull-right">
+                  <ul>
+                      <li class="submenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cart3 me-lg-3" viewBox="0 0 16 16">
+                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                              <div id="carrito"> 
+                                      <table id="lista-carrito" class="align-items-center justify-content-center u-full-width text-black">
+                                          <thead>
+                                              <tr>
+                                                  <th>Imagen</th>
+                                                  <th>Nombre</th>
+                                                  <th>Precio</th>
+                                                  <th>Cantidad</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody></tbody>
+                                      </table>
+                                      <div class="container text-center">
+                                        <div class="row">
+                                          <div class="col order-last">
+                                            <p></p>
+                                            <a href="#" id="vaciar-carrito" class="button btn btn-outline-secondary justify-content-center">Vaciar Carrito</a>
+                                          </div>
+                                        </div>
+                                      </div>   
+                              </div>
+                      </li>
+                  </ul>
+              </div>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark --bs-tertiary-color" placeholder="Buscar" aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-dark"><a href="Login.html">Registrarce</a></button>
+                  <button type="button" class="btn btn-dark "><a href="Sign-in.html">Ingresar</a></button>
+                </div>
+              </div>
+            </div>
+         </header>
+        
+            <!-- finaliza barra de navegacion-->
+        
+         
+       
+            <!-- inicia carrousel -->
+
+              
+           <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators" width="10%">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label=""></button>
+             </div>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+              <img src= "./imagenes/nvidia-cyberbanner.webp" width="100%"  ></src> 
+                <div class="container"> 
+               </div>
+             </div>
+      <div class="carousel-item">
+         <img src= "./imagenes/genesis23banner.webp" width="100%"  ></src> 
+         <div class="container">
+        </div>
+     
+      </div>
+      <div class="carousel-item">
+        <img src= "./imagenes/asusbanner.webp" width="100%"  ></src>         
+         <div class="container">
+        </div>
+      </div>
+    </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  
+             
+    <!-- finaliza carrousel-->
+
+    <!-- lista de articulos-->
+
+       
+  
+    <div class="container" id="lista-productos">
+       <div class="album py-5 bg-light">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+                 
+            <div class="card-body">
+              <p></p>
+              <img src="./imagenes/iPhone 14.jfif" width="100%" height="225" alt="iPhone 14 Pro Max">
+              <p><h3>IPhone 14</h3></p>
+              <p class="card-text">El iPhone 14 Pro Max te permite captar detalles increíbles gracias a su cámara gran angular de 48 MP. Además, trae la Dynamic Island y una pantalla siempre activa, para que puedas interactuar con tu iPhone de una forma completamente nueva. Y viene con Detección de Choques.La funcionalidad Emergencia SOS usa conexión celular o llamadas por Wi-Fi.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h2 span class="text-muted">USD 1000</h2></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+            <img src="./imagenes/samsung galaxy s23.jfif" width="100%" height="225" alt="samsung galaxy s23">
+              
+                <p></p>
+                <p><h3>Samsung Galaxy S23</h3></p>
+              <p class="card-text">Galaxy S23 Comparte momentos épicos y disfruta Tonos inspirados en la naturaleza Nuevos colores, más frescos e inspirados en la naturaleza, que se convierten en tintes naturales y se infunden en la montura de metal pulido. Directamente de la naturaleza Marca tendencia y consigue los colores más exclusivos. La capacidad nominal es de 3785 mAh</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">USD 1000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+             <div class="card-body">
+              <img src="./imagenes/motorola edge 30.jfif" width="100%" height="225" alt="motorola edge 30">
+              <p></p>
+              <p><h3>Motorola edge 30</h3></p>
+              <p class="card-text">Diseñado pensando en ti. Con un diseño fino, ligero y muy elegante, el motorola edge 30 neo es un teléfono que destaca en todos los sentidos, Experimentá el nuevo procesador Snapdragon 8+ Gen 1, la plataforma móvil Snapdragon más rápida y avanzada hasta el momento y Capturá fotos detalladas en condiciones de poca luz.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">USD 1000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img src="./imagenes/Zenbook Pro 16X OLED.webp" width="100%" height="225" alt="Asus Zenbook Pro 16X OLED">
+              <p></p>
+              <p><h3>Asus Zenbook Pro 16X OLED</h3></p>
+              <p class="card-text">El Zenbook Pro 16X OLED es un portátil para creadores sin concesiones con una gran cantidad de características de diseño innovadoras y un diseño totalmente metálico completamente nuevo. Utiliza una pantalla táctil 16:10 hasta 4K OLED HDR NanoEdge1, y cuenta con un procesador Intel y una GPU GeForce RTX™ 3060. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">USD 2000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+             <div class="card-body">
+              <img src="./imagenes/MSI Titan GT77.png" width="100%" height="225" alt="Titan GT77">
+              <p></p>
+              <p><h3> Titan GT77 </h3></p>
+              <p class="card-text">Procesador Intel Core i7 para ofrecer la máxima eficiencia en el juego Ponte al día: ponte en marcha con el nuevo Windows 11 Pro.Trazado de rayos: la GPU NVIDIA GeForce RTX 3070 Ti alimentada por la arquitectura RTX de 2ª generación para los gráficos más realistas con trazado de rayos y características de IA de vanguardia.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">USD 2000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+             <div class="card-body">
+              <img src="./imagenes/Gigabyte Aorus.jpg" width="100%" height="225" alt="Gigabite Aorus 17">
+              <p></p>
+              <p><h3>Gigabite Aorus 17</h3></p>
+              <p class="card-text">NVIDIA GeForce RTX 40 Series: NVIDIA GeForce RTX 4070 Laptop GPU 8GB GDDR6 Intel 13th Gen Ready: i7-13700H Processor 5.0 GHz DDR5 Ready: DDR5 4800 8GB*2 (16GB), 1TB Storage (Gen4 M.2 SSD) Cutting-Edge Display: 17.3" Thin Bezel QHD 2560x1440, 240Hz, 100% sRGB, TÜV Rheinland Certified Windows 11 Home AD, Intel Wi-Fi 6E, Bluetooth V5.2.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">USD 2000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img src="./imagenes/Xiaomi Mi Electric Scooter.jpg" width="100%" height="225" alt="Xiaomi Mi Electric Scooter">
+              <p></p>
+              <p><h3>Xiaomi Mi Electric Scooter</h3></p>
+              <p class="card-text">Utiliza una aleación de aluminio de baja densidad y alta resistencia aeroespacial, por lo que el peso neto del vehículo es de sólo 12 kg, lo que lo hace fácil de transportar. Gracias al ingenioso diseño estructural, Mi Electric Scooter Essential puede plegarse en sólo 3 segundos. Con una altura de plegado de sólo 49 cm. Cuenta con una autonomía de hasta 20 km.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">ARS 200000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body"> 
+              <img src="./imagenes/Redmi Buds 3.jpeg" width="100%" height="225" alt="Zenbook Pro 16X">
+              <p></p>
+              <p><h3>Xiaomi Buds 3</h3></p>
+              <p class="card-text">Auriculares con anulación de ruido activa que van más allá de la anulación de ruido.Al mismo tiempo que mantiene las características de anulación de ruido insignia, también destaca en términos de calidad de sonido. Lo único que tienes que hacer es cerrar los ojos y escuchar el sonido. Cuentan con batería de larga duración y carga inalámbrica</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">ARS 10000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img src="./imagenes/Xiaomi Smart Band 7.png" width="100%" height="225" alt="Zenbook Pro 16X"> 
+              <p></p>
+              <p><h3>Xiaomi Smart Band 7</h3></p>
+              <p class="card-text">La magnífica pantalla AMOLED de gran tamaño se estrena en tu muñeca, lo que facilita la lectura y el control tanto si estás corriendo en un camino pedregoso como navegando en una oscilante casa flotante. Todo se muestra en detalle a alta resolución.Gracias a un procesamiento gráfico más avanzado y efectos de animación más fluidos. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary button input agregar-carrito" onclick="leerDatos(this)" data-id="1" >Comprar</button>
+                </div>
+                <h3 small class="text-muted">ARS 15000</h3></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        
+      <!-- finaliza lista de articulos-->  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           <!-- Bootstrap JavaScript Libraries -->
+           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+         
+           
+         
+          </body>
+
+
+ </html>
