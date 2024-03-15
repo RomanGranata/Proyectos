@@ -1,0 +1,112 @@
+
+    body {
+        background: radial-gradient(circle at bottom, navy 0,black 100%);
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        }
+
+
+
+.container {
+    overflow: hidden;
+    width: 60%;
+    height: 80%;
+    text-align: justify;
+    justify-content: center;
+    display: inline-flex;
+    background-color: transparent
+}
+
+
+.reloj{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top:45px;
+    border-radius: 100%;
+    background-color: transparent;
+    box-shadow: #a876aa 0px 0px 50px ;
+}
+
+.perno{
+    top: 50%;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    background-color: rgb(84, 169, 244);
+    z-index: 200;
+}
+.hora{
+    height: 50px;
+    width: 5px;
+    top: 32%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: rgb(83, 209, 209);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    z-index: 100;
+}
+
+.minutos{
+    height: 70px;
+    width: 5px;
+    top: 25%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: azure;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    z-index: 50;
+}
+
+.segundos{
+    height: 90px;
+    width: 5px;
+    top: 16%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: #a876aa;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+}
+
+
+.caja-digital{
+    background-color: transparent;
+    margin-top: 4%;
+    width: 100%;
+    height: 70px;
+    margin-top: 30%;
+}
+
+.reloj-digital{
+    text-align: center;
+    font-size: larger;
+    color: rgb(109, 6, 6);
+    padding-top: 2%;
+}
+
+.fecha-digital{
+    text-align: center;
+    font-size: large;
+    color: azure;
+    margin-top: 3%;
+}
